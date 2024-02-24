@@ -1,0 +1,25 @@
+:root {
+     --bs-body-font-family: 'Rubik', sans-serif;
+
+}
+.nav-link  {
+    color:white !important;
+    text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px !important;
+}
+
+.btn-outline-success {
+    --bs-btn-color: white;
+    --bs-btn-border-color: yellow;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: white;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #04ef82;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: white;
+    --bs-gradient: none;
+}

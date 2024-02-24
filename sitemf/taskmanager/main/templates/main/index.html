@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache">
+
+
+    <title>Министерство финансов Республики Бурятия</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src="{% static 'js/metrika.js' %}"></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="VK" viewBox="0 0 48 48">
+
+    <path d="M0 23.04C0 12.1788 0 6.74826 3.37413 3.37413C6.74826 0 12.1788 0 23.04 0H24.96C35.8212 0 41.2517 0 44.6259 3.37413C48 6.74826 48 12.1788 48 23.04V24.96C48 35.8212 48 41.2517 44.6259 44.6259C41.2517 48 35.8212 48 24.96 48H23.04C12.1788 48 6.74826 48 3.37413 44.6259C0 41.2517 0 35.8212 0 24.96V23.04Z" fill="#0077FF"/>
+      <path d="M25.54 34.5801C14.6 34.5801 8.3601 27.0801 8.1001 14.6001H13.5801C13.7601 23.7601 17.8 27.6401 21 28.4401V14.6001H26.1602V22.5001C29.3202 22.1601 32.6398 18.5601 33.7598 14.6001H38.9199C38.0599 19.4801 34.4599 23.0801 31.8999 24.5601C34.4599 25.7601 38.5601 28.9001 40.1201 34.5801H34.4399C33.2199 30.7801 30.1802 27.8401 26.1602 27.4401V34.5801H25.54Z" fill="white"/>
+  </symbol>
+  <symbol id="Odnoklassniki" viewBox="0 0 400 400">
+
+      <path  fill="#FAAB62" d="M389.404,330.724c0,31.312-25.383,56.693-56.693,56.693H56.693C25.382,387.417,0,362.036,0,330.724V56.693   C0,25.382,25.382,0,56.693,0h276.018c31.311,0,56.693,25.382,56.693,56.693V330.724z"/>
+      <path  fill="#F7931E" d="M387.404,329.317c0,30.989-25.122,56.11-56.111,56.11H58.11c-30.989,0-56.11-25.121-56.11-56.11V58.1   C2,27.111,27.122,1.99,58.11,1.99h273.183c30.989,0,56.111,25.122,56.111,56.11V329.317z"/>
+      <path  fill="#FFFFFF" d="M194.485,57.901c-38.593,0-69.878,31.286-69.878,69.878c0,38.593,31.285,69.881,69.878,69.881   s69.878-31.288,69.878-69.881C264.363,89.187,233.078,57.901,194.485,57.901z M194.485,156.667   c-15.953,0-28.886-12.934-28.886-28.887s12.933-28.886,28.886-28.886s28.886,12.933,28.886,28.886S210.438,156.667,194.485,156.667   z"/>
+      <path xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" d="M219.155,253.262c27.975-5.699,44.739-18.947,45.626-19.658c8.186-6.565,9.501-18.523,2.936-26.71    c-6.564-8.186-18.521-9.501-26.709-2.937c-0.173,0.14-18.053,13.856-47.472,13.876c-29.418-0.02-47.676-13.736-47.849-13.876    c-8.188-6.564-20.145-5.249-26.709,2.937c-6.565,8.187-5.25,20.145,2.936,26.71c0.899,0.721,18.355,14.314,47.114,19.879    l-40.081,41.888c-7.284,7.554-7.065,19.582,0.489,26.866c3.687,3.555,8.439,5.322,13.187,5.322c4.978,0,9.951-1.945,13.679-5.812    l37.235-39.665l40.996,39.922c7.428,7.416,19.456,7.404,26.87-0.021c7.414-7.426,7.405-19.456-0.021-26.87L219.155,253.262z"/>
+  </symbol>
+
+    <symbol id="Viber" viewBox="0 0 29 29">
+        <rect xmlns="http://www.w3.org/2000/svg" width="28.87" height="28.87" fill="#7d3daf" rx="6.48" ry="6.48"/>
+        <path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M21.83 10.28a5.34 5.34 0 0 0-3.6-3.47 20 20 0 0 0-7.54 0A5.34 5.34 0 0 0 7 10.26a14.75 14.75 0 0 0 0 6.35 5.38 5.38 0 0 0 3.4 3.42v1.69a.68.68 0 0 0 1.17.47l1.71-1.77h1.11a20.09 20.09 0 0 0 3.77-.36 5.34 5.34 0 0 0 3.6-3.47 14.75 14.75 0 0 0 .07-6.31zm-1.35 6a4 4 0 0 1-2.54 2.44 18.66 18.66 0 0 1-4 .32.09.09 0 0 0-.07 0l-1.26 1.36-1.33 1.36a.16.16 0 0 1-.27-.11v-2.79a.1.1 0 0 0-.08-.09 4 4 0 0 1-2.54-2.44 13.38 13.38 0 0 1 0-5.74 4 4 0 0 1 2.54-2.44 18.64 18.64 0 0 1 7 0 4 4 0 0 1 2.54 2.44 13.37 13.37 0 0 1 .01 5.74z"/>
+        <path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M17.82 15.84a7.84 7.84 0 00-.65-.49c-.23-.16-.45-.32-.69-.47a.61.61 0 00-.73 0c-.22.18-.33.53-.64.57a1 1 0 01-.52-.13 3.62 3.62 0 01-2-2.25.45.45 0 010-.4.69.69 0 01.16-.17l.21-.16a.65.65 0 00.18-.88 8.08 8.08 0 00-1-1.36.5.5 0 00-.63-.15 2.34 2.34 0 00-.78.59 1 1 0 00-.3 1c.16.39.32.78.5 1.16a9.85 9.85 0 001.45 2.22 10.06 10.06 0 003.79 2.54c.14.06.29.09.44.14a2.23 2.23 0 00.4-.13 2.15 2.15 0 00.93-1 .51.51 0 00-.12-.63zM14.44 9.49h-.11a.23.23 0 00-.23.26c0 .17.2.17.34.19s.43 0 .63.07a3.35 3.35 0 012.7 2.8c0 .26.05.53.07.8s.08.26.23.26a.22.22 0 00.21-.26c0-.32 0-.64-.1-1a3.81 3.81 0 00-3.74-3.12z"/>
+        <path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M16.85 13.15a.57.57 0 0 0 0 .18.21.21 0 0 0 .4 0 .87.87 0 0 0 0-.13v-.32-.12a2.48 2.48 0 0 0-1.35-1.93 2.94 2.94 0 0 0-1.23-.32.2.2 0 0 0-.22.2.2.2 0 0 0 .19.23L15 11a2.56 2.56 0 0 1 .71.22 2.12 2.12 0 0 1 .89.83 2.27 2.27 0 0 1 .25 1.1z"/>
+        <path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M16.29 13a.59.59 0 0 0 0-.18 1.29 1.29 0 0 0-1.29-1.3.23.23 0 0 0-.24.18.21.21 0 0 0 .17.25c.11 0 .23 0 .35.05a.81.81 0 0 1 .25.12.84.84 0 0 1 .31.49 2.34 2.34 0 0 1 0 .3.23.23 0 0 0 .24.23.19.19 0 0 0 .21-.14z"/>
+    </symbol>
+</svg>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg " style="background-color: #2b579a;">
+  <div class="container">
+    <a class="navbar-brand"  href="{% url 'main' %}">
+        <img src="{% static 'images/gerbbur2-icon.png' %}" alt="Logo" width="70" height="80" class="d-inline-block ">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'main' %}">Главная</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://budget.govrb.ru/file/ruk_bweb.exe">Документация</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://budget.govrb.ru/forum/">Форум</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Бюджет
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Бюджетное планирование</a></li>
+            <li><a class="dropdown-item" href="#">Исполнение бюджета</a></li>
+              <li><a class="dropdown-item" href="#">Wed-консолидация</a></li>
+              <li><a class="dropdown-item" href="#">Web-НСИ</a></li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+
+      <form class="d-flex" action="{% url 'search_blogs'%}" role="search" method="get">
+          {% csrf_token %}
+        <input class="form-control me-2" type="text" name="q" placeholder="Найти" >
+        <button class="btn btn-outline-success"  type="submit">Поиск</button>
+      </form>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 m-4">
+            {% if request.user.is_authenticated %}
+
+            <a class="text-white" href="{% url 'logout' %}">Выйти</a>
+
+        {% else %}
+
+            <a class="nav-link" href="{% url 'login' %}">Войти</a>
+
+          {% endif %}
+
+        </div>
+    </div>
+  </div>
+</nav>
+
+
+
+{% block content %}
+
+ <div class="container">
+      <div class="text-center my-5">
+        <h1>Новости и обновления</h1>
+        <hr />
+      </div>
+
+      <div class="row">
+          {% for el in object_list %}
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-5 shadow-sm">
+            <img src="{% static 'images/a.jpg' %}" class="img-fluid" />
+
+            <div class="card-body">
+              <div class="card-title">
+                <h2>{{el.headline}}</h2>
+              </div>
+              <div class="card-text">
+                <p>
+                 {{el.description|truncatewords_html:20|safe}}
+                </p>
+                  <p class="text-muted ">{{el.datetime|date:"d-m-Y"}}</p>
+
+              </div>
+              <a href="{% url 'detail_article' el.id %}" class="btn btn-outline-primary rounded-0 float-end"
+                >Подробнее</a>
+            </div>
+          </div>
+        </div>
+          {% endfor %}
+      </div>
+ </div>
+ <nav>
+		<ul class="pagination">
+			<div class="mx-auto d-flex flex-row mt-5">
+
+				{% if page_obj.has_previous %}
+					<li class="page-item">
+						<a class="page-link" href="?page=1">&laquo; Начальная страница</a>
+					</li>
+
+					<li class="page-item">
+						<a class="page-link" href="?page={{ page_obj.previous_page_number }}">Предыдущая</a>
+					</li>
+				{% endif %}
+
+				<li class="page-item">
+					<a class="page-link" href="#">Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.</a>
+				</li>
+
+				{% if page_obj.has_next %}
+					<li class="page-item">
+						<a class="page-link" href="?page={{ page_obj.next_page_number }}">Следующая</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Последняя &raquo;</a>
+					</li>
+				{% endif %}
+			</div>
+		</ul>
+	</nav>
+{% endblock content %}
+  <footer class="py-3 my-6" style="background-color: #2b579a;">
+
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Главная</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Документация</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Форум</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Инструкция</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Контакты</a></li>
+    </ul>
+
+      <ul class="nav col-md-10 justify-content-end list-unstyled d-flex">
+          <div class="position-absolute bottom-10 start-0">
+            <p align="right">
+              <a href="https://metrika.yandex.ru/stat/?id=71088370&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/71088370/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="71088370" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->
+                 </p>
+            </div>
+      <li class="ms-3"><a class="text-muted" href="https://ok.ru/group/54199325491407" target="_blank"><svg class="bi" width="36" height="36"><use xlink:href="#Odnoklassniki"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://vk.com/minfin_bur" target="_blank"><svg class="bi" width="36" height="36"><use xlink:href="#VK"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://invite.viber.com/?g2=AQBk%2Bee1fUApHUtrEr0wWS9SfZGWJXZcwt4jcp6zcvdi73XKWdCpdQzjWnXozg2Y&lang=ru" target="_blank"><svg class="bi" width="36" height="36"><use xlink:href="#Viber"></use></svg></a></li>
+
+    </ul>
+
+  </footer>
+
+
+</body>
+</html>

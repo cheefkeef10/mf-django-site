@@ -1,0 +1,80 @@
+{% extends 'main/index.html' %}
+  
+{% block title %}Login{% endblock %}
+  
+{% block content %}
+<h2 class="alert alert-warning text-center">Налоговая Республики Бурятия</h2>
+{% for message in messages %}
+<p class='alert alert-success mt-3'>{{message}}</p>
+{% endfor %}
+
+<!--   <h2 >Welcome!</h2>-->
+<!--   {% if user.is_authenticated %}-->
+<!--      Hi {{ user.username }}!-->
+<!--      <a href="{% url 'logout' %}" class="btn btn-danger">Выйти</a>-->
+<!--    {% else %}-->
+<!--      <a href="{% url 'login' %}" class="btn btn-success">Войти</a>-->
+<!--    {% endif %}-->
+
+<div class="mt-5">
+
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Дата</th>
+      <th scope="col">ОКТМО</th>
+      <th scope="col">КБК</th>
+      <th scope="col">КПП</th>
+      <th scope="col">Наименование</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in all_data %}
+    <tr>
+      <td>{{i.ID}}</td>
+        <td>{{i.datetime}}</td>
+        <td>{{i.oktmo_id}}</td>
+        <td>{{i.KBK}}</td>
+        <td>{{i.KPP}}</td>
+        <td>{{i.NAIMPLAT}}</td>
+
+        <td>
+            <a href="{% url 'delete_item' i.ID%}" class="btn btn-danger">Удалить </a>
+        </td>
+    </tr>
+
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+<ul class="pagination">
+			<div class="mx-auto d-flex flex-row mt-5">
+
+				{% if all_data.has_previous %}
+					<li class="page-item">
+						<a class="page-link" href="?page=1">&laquo; Начальная страница</a>
+					</li>
+
+					<li class="page-item">
+						<a class="page-link" href="?page={{ all_data.previous_page_number }}">Предыдущая</a>
+					</li>
+				{% endif %}
+
+				<li class="page-item">
+					<a class="page-link" href="#">Страница {{ all_data.number }} из {{ all_data.paginator.num_pages }}.</a>
+				</li>
+
+				{% if all_data.has_next %}
+					<li class="page-item">
+						<a class="page-link" href="?page={{ all_data.next_page_number }}">Следующая</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="?page={{ all_data.paginator.num_pages }}">Последняя &raquo;</a>
+					</li>
+				{% endif %}
+			</div>
+		</ul>
+
+{% endblock content %}
+
